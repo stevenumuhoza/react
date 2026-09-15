@@ -1,20 +1,6 @@
-import Header from "./Header"
-import MainContent from "./MainContent"
-import Footer from "./Footer"
-import "./index.css"
 import { createRoot } from "react-dom/client"
-const root = createRoot(document.getElementById("root"))
+import App from "./App"
 
-function Page() {
-    return (
-        <>
-            <Header />
-            <MainContent />
-            <Footer />
-        </>
-    )
-}
-
-root.render(
-    <Page />
+createRoot(document.getElementById("root")).render(
+    <App />
 )
